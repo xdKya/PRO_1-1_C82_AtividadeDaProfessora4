@@ -41,9 +41,6 @@ export default class Feed extends Component {
     this._loadFontsAsync();
   }
 
-  renderItem = ({ item: story }) => {
-    return <StoryCard story={story} />;
-  };
 
   keyExtractor = (item, index) => index.toString();
 
